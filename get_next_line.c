@@ -6,7 +6,7 @@
 /*   By: cnammour <cnammour@student.42beirut.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 16:08:29 by cnammour          #+#    #+#             */
-/*   Updated: 2024/06/16 16:48:37 by cnammour         ###   ########.fr       */
+/*   Updated: 2024/06/28 21:21:14 by cnammour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,9 @@ void	ft_reset_lst(t_list_gnl **list)
 {
 	t_list_gnl	*last_node;
 	t_list_gnl	*new_node;
-	int		i;
-	int		j;
-	char	*buffer;
+	int			i;
+	int			j;
+	char		*buffer;
 
 	i = 0;
 	j = 0;

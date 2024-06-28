@@ -6,7 +6,7 @@
 /*   By: cnammour <cnammour@student.42beirut.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 23:56:51 by cnammour          #+#    #+#             */
-/*   Updated: 2024/06/16 16:56:10 by cnammour         ###   ########.fr       */
+/*   Updated: 2024/06/28 21:20:53 by cnammour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-
 
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
@@ -83,7 +82,7 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 // Get Next Line
 char				*get_next_line(int fd);
-t_list_gnl				*ft_last_node(t_list_gnl *list);
+t_list_gnl			*ft_last_node(t_list_gnl *list);
 int					ft_length_to_nl(t_list_gnl *lst);
 void				ft_append_tail(t_list_gnl **list, char *str);
 char				*ft_create_string_from_lst(t_list_gnl *lst);
@@ -91,13 +90,13 @@ void				ft_create_list(int fd, t_list_gnl **list);
 int					ft_contains_nl(t_list_gnl *list);
 int					ft_free_str(char *str, int len);
 // Printf
-int	ft_print_percent(void);
-int	ft_printf(const char *fmt, ...);
-int	ft_print_char(char c);
-int	ft_print_decimal(int number);
-int	ft_print_string(char *str);
-int	ft_print_unsigned(unsigned int number);
-int	ft_print_pointer(void *p);
-int	ft_putnbr_base(unsigned int nbr, char *base);
+int					ft_print_percent(void);
+int					ft_printf(const char *fmt, ...);
+int					ft_print_char(char c);
+int					ft_print_decimal(int number);
+int					ft_print_string(char *str);
+int					ft_print_unsigned(unsigned int number);
+int					ft_print_pointer(void *p);
+int					ft_putnbr_base(unsigned int nbr, char *base);
 
 #endif
